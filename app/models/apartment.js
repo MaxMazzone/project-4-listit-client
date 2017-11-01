@@ -7,5 +7,6 @@ export default DS.Model.extend({
   bathrooms: DS.attr('number'),
   description: DS.attr('string'),
   petsAllowed: DS.attr('boolean'),
+  editable: DS.attr('boolean'),
   user: DS.belongsTo('user')
 });

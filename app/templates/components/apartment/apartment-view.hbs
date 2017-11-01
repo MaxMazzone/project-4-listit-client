@@ -5,5 +5,6 @@
   <li>Bathrooms: <strong>{{apartment.bathrooms}}</strong> </li>
   <li>description: <strong>{{apartment.description}}</strong> </li>
 </ul>
-
+{{#if apartment.editable}}
 <button {{action 'deleteApartment' apartment=model}}>Delete apartment listing</button>
+{{/if}}
