@@ -1,1 +1,10 @@
-{{yield}}
+<form {{action 'createApartment' on ='submit'}}>
+  {{input placeholder='Address' value=newApartment.address}}
+  {{input placeholder='Rent' value=newApartment.rent}}
+  {{input placeholder='Number of bedrooms' value=newApartment.bedrooms}}
+  {{input placeholder='Number of bathrooms' value=newApartment.bathrooms}}
+  {{input placeholder='Description' value=newApartment.description}}
+  Pets are allowed {{input type="checkbox" name="Pets allowed?" checked="true"}}
+  <br>
+  <button type ='submit'> Save </button>
+</form>
