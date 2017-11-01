@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   var ENV = {
-    modulePrefix: 'List-It',
+    modulePrefix: 'ga-wdi-boston.list-it',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
