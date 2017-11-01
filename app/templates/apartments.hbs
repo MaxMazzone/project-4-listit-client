@@ -2,7 +2,6 @@
 
 <ul>
 {{#each model as |apartment|}}
-  <li>{{apartment.address}}</li>
-  <li>{{apartment.rent}}</li>
+{{apartments-list apartment=apartment}}
 {{/each}}
 </ul>
