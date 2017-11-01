@@ -2,4 +2,7 @@
 <h4>Available for ${{apartment.rent}}</h4>
 <ul>
   <li>Bedrooms: <strong>{{apartment.bedrooms}}</strong> </li>
+  <li>Bathrooms: <strong>{{apartment.bathrooms}}</strong> </li>
+  <li>description: <strong>{{apartment.description}}</strong> </li>
 </ul>
+<button {{action 'deleteApartment' apartment=model}}>Delete apartment listing</button>

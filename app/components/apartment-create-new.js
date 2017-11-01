@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  classNames: ['form-group'],
   newApartment: {
     address: null,
     rent: null,
