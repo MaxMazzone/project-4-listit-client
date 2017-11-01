@@ -1,4 +1,4 @@
-import ENV from '<project-4-listit-client/config/environment';
+import ENV from 'ga-wdi-boston.list-it/config/environment';
 import ActiveModelAdapter from 'active-model-adapter';
 
 import Ember from 'ember';
