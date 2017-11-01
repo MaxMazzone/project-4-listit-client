@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('apartments');
-  this.route('apartment');
+  this.route('apartment', { path: '/apartments/:apartment_id' });
 });
 
 export default Router;
