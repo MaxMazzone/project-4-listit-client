@@ -1,1 +1,10 @@
-{{yield}}
+<h3> Edit listing </h3>
+<form {{action 'editList' on='submit'}}>
+  {{input placeholder='Address' value=apartment.address}}
+  {{input placeholder='Rent' value=apartment.rent}}
+  {{input placeholder='Number of bedrooms' value=apartment.bedrooms}}
+  {{input placeholder='Number of bathrooms' value=apartment.bathrooms}}
+  {{input placeholder='Description' value=apartment.description}}
+  Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=apartment.petsAllowed}}
+  <button type='submit'> save </button>
+</form>

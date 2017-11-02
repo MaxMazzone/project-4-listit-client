@@ -6,6 +6,7 @@
   <li>description: <strong>{{apartment.description}}</strong> </li>
   <li>Pets allowed: <strong>{{apartment.petsAllowed}}</strong> </li>
 </ul>
+{{apartment/apartment-update-form apartment=apartment}}
 {{#if apartment.editable}}
 <button {{action 'deleteApartment' apartment=model}}>Delete apartment listing</button>
 {{/if}}
