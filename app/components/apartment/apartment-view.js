@@ -4,7 +4,7 @@ export default Ember.Component.extend({
 
   actions: {
   deleteApartment() {
-    return this.sendAction('deleteApartment', this.get('apartment'))
+    return this.sendAction('deleteApartment', this.get('apartment'));
   },
 },
 });

@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['form-group'],
   newApartment: {
     address: null,
     rent: null,
@@ -14,7 +13,12 @@ export default Ember.Component.extend({
   actions: {
     createApartment() {
       this.sendAction('createApartment', this.get('newApartment'));
-      return this.set('newApartment', {});
+      this.set('newApartment.address', null);
+      this.set('newApartment.rent', null);
+      this.set('newApartment.bedrooms', null);
+      this.set('newApartment.bathrooms', null);
+      this.set('newApartment.description', null);
+      return this.set('newApartment.petsAllowed', false);
     }
   }
 });
