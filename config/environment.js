@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/project-4-listit-client';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://possessed-moonlight-45582.herokuapp.com/';
+    ENV.apiHost = 'https://possessed-moonlight-45582.herokuapp.com';
   }
 
   return ENV;
