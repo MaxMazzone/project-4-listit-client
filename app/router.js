@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('apartments/new');
   this.route('apartments');
   this.route('apartment', { path: '/apartments/:apartment_id' });
+  this.route('apartment/edit', { path: '/apartments/:apartment_id/edit' });
 });
 
 export default Router;
