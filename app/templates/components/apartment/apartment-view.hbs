@@ -1,10 +1,17 @@
 <h3> {{apartment.address}} </h3>
 <h4>Available for ${{apartment.rent}}</h4>
 <ul>
+{{#if apartment.bedrooms}}
   <li>Bedrooms: <strong>{{apartment.bedrooms}}</strong> </li>
+{{/if}}
+{{#if apartment.bathrooms}}
   <li>Bathrooms: <strong>{{apartment.bathrooms}}</strong> </li>
+{{/if}}
+{{#if apartment.description}}
   <li>description: <strong>{{apartment.description}}</strong> </li>
+{{/if}}
   <li>Pets allowed: <strong>{{apartment.petsAllowed}}</strong> </li>
+
 </ul>
 {{outlet}}
 {{#if apartment.editable}}

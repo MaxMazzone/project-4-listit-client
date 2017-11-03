@@ -1,9 +1,9 @@
-<form {{action 'createApartment' on ='submit'}}>
+<form class='form-group' {{action 'createApartment' on ='submit'}}>
   {{input placeholder='Address' value=newApartment.address}}
   {{input placeholder='Rent' value=newApartment.rent}}
   {{input placeholder='Number of bedrooms' value=newApartment.bedrooms}}
   {{input placeholder='Number of bathrooms' value=newApartment.bathrooms}}
-  {{input placeholder='Description' value=newApartment.description}}
+  {{textarea class='form-control'  rows="5" placeholder='Description' value=apartment.description}}
   Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=newApartment.petsAllowed}}
   <br>
   <button type ='submit'> Save </button>

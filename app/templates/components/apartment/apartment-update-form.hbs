@@ -1,11 +1,13 @@
 <h3> Edit listing </h3>
-<form {{action 'editListing' on='submit'}}>
-  {{input placeholder='Address' value=apartment.address}}
-  {{input placeholder='Rent' value=apartment.rent}}
-  {{input placeholder='Number of bedrooms' value=apartment.bedrooms}}
-  {{input placeholder='Number of bathrooms' value=apartment.bathrooms}}
-  {{input placeholder='Description' value=apartment.description}}
-  Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=apartment.petsAllowed}}
-  <button type='submit'> save </button>
-</form>
+<div class="form-group">
+  <form {{action 'editListing' on='submit'}}>
+    {{input placeholder='Address' value=apartment.address}}
+    {{input placeholder='Rent' value=apartment.rent}}
+    {{input placeholder='Number of bedrooms' value=apartment.bedrooms}}
+    {{input placeholder='Number of bathrooms' value=apartment.bathrooms}}
+    {{textarea class='form-control'  rows="5" placeholder='Description' value=apartment.description}}
+    Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=apartment.petsAllowed}}
+    <button type='submit'> save </button>
+  </form>
+</div>
 {{#link-to 'apartment' apartment}} Back {{/link-to}}
