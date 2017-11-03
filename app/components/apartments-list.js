@@ -1,10 +1,9 @@
 import Ember from 'ember';
-
+import formatMoney from "accounting/format-money"
 
 export default Ember.Component.extend({
 actions: {
   goToApartment: function(apartment) {
-    console.log('clicked')
       this.sendAction('goToApartment', apartment);
   }
 }

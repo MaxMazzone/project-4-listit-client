@@ -1,5 +1,5 @@
 <h3> {{apartment.address}} </h3>
-<h4>Available for ${{apartment.rent}}</h4>
+<h4>Available for {{format-money apartment.rent precision=0}}</h4>
 <ul>
 {{#if apartment.bedrooms}}
   <li>Bedrooms: <strong>{{apartment.bedrooms}}</strong> </li>
