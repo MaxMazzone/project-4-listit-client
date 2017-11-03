@@ -1,8 +1,8 @@
 <h2>Apartments</h2>
 
-<ul>
+
 {{#each model as |apartment|}}
-{{apartments-list apartment=apartment}}
+{{apartments-list apartment=apartment goToApartment='goToApartment'}}
 {{/each}}
-</ul>
+
 {{new-apartment-link}}
