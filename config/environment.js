@@ -2,6 +2,7 @@
 
 module.exports = function (environment) {
   'use strict';
+
   var ENV = {
     modulePrefix: 'ga-wdi-boston.list-it',
     environment: environment,
@@ -22,6 +23,10 @@ module.exports = function (environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    paperclip: {
+      path: ':class/:attachment/:id_partition/:style/:filename.jpg'
     },
   };
 
