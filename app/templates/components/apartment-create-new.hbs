@@ -6,6 +6,10 @@
   {{textarea class='form-control'  rows="5" placeholder='Description' value=newApartment.description}}
   Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=newApartment.petsAllowed}}
   <br>
+  {{#if isAuthenticated}}
   <button type ='submit'> Save </button>
+  {{else}}
+  <p> Please sign-in to create a listing!</p>
+  {{/if}}
 </form>
 {{#link-to 'apartments'}} Back {{/link-to}}
