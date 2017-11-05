@@ -8,6 +8,5 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   petsAllowed: DS.attr('boolean'),
   editable: DS.attr('boolean'),
-  user: DS.belongsTo('user'),
-  photo: attr('file'),
+  user: DS.belongsTo('user')
 });
