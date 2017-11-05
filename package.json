@@ -43,6 +43,7 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.10.0",
+    "ember-data-paperclip": "^0.3.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.1.1",
     "ember-formatted-number": "0.0.4",
