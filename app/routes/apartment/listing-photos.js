@@ -3,7 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model () {
   const apartment = this.modelFor('apartment')
-  return this.get('store').query('listing-photo', {apartment_id: apartment.id});
+  return Ember.RSVP.hash ({
+    listingPhoto: this.get('store').query('listing-photo', {apartment_id: apartment.id}),
+    apartment: this.get('store').findRecord('apartment', apartment.id)
+  });
 },
 
   actions: {
@@ -14,6 +17,7 @@ export default Ember.Route.extend({
          newListingPhoto.save()
          .then(console.log('success'))
          .then(()=> this.refresh())
+         .catch(console.log('error'))
     }
 
   }
