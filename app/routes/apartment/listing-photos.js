@@ -18,6 +18,10 @@ export default Ember.Route.extend({
          .then(console.log('success'))
          .then(()=> this.refresh())
          .catch(console.log('error'))
+    },
+    deletePhoto (photo) {
+      console.log('delete')
+      return photo.destroyRecord()
     }
 
   }

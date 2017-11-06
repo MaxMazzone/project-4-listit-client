@@ -1,7 +1,7 @@
 {{#each model.listingPhoto as |listingPhoto|}}
-<img src={{listingPhoto.url}}>
+{{apartment/photo-view listingPhoto=listingPhoto deletePhoto='deletePhoto'}}
 {{/each}}
 
 {{#if model.apartment.editable}}
-{{apartment/photo-upload createListingPhoto='createListingPhoto'}}
+{{apartment/photo-upload createListingPhoto='createListingPhoto' }}
 {{/if}}
