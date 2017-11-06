@@ -14,6 +14,7 @@
 </ul>
 {{outlet apartment=apartment}}
 <button {{action 'seePhotos' apartment=apartment}}>See Photos</button>
+<br>
 {{#if apartment.editable}}
 {{#link-to 'apartment/edit' apartment}} Edit listing{{/link-to}}
 <br>

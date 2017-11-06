@@ -15,13 +15,26 @@ export default Ember.Route.extend({
       // const apartmentId = apartment.get('id')
       let newListingPhoto = this.get('store').createRecord('listing-photo', {url: photoUrl, apartment: apartment});
          newListingPhoto.save()
-         .then(console.log('success'))
          .then(()=> this.refresh())
-         .catch(console.log('error'))
+         .then(() => {
+           this.get('flashMessages')
+           .success('Successfully posted image')
+         })
+         .catch(() => {
+           this.get('flashMessages')
+           .danger('There was a problem. Please try again.');
+           });
     },
     deletePhoto (photo) {
-      console.log('delete')
       return photo.destroyRecord()
+      .then(() => {
+        this.get('flashMessages')
+        .success('Successfully deleted')
+      })
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Please try again.');
+        });
     }
 
   }

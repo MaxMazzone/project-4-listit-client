@@ -11,9 +11,22 @@
 }
 body {
   background-image: url(https://i.imgur.com/2kiR2I4.jpg);
-
   background-size: auto;
+  font-family:Book Antiqua;
 }
 img {
-  max-width: 50px
+  max-width: 50px;
+}
+// #navigation:hover {
+//   background-color: #c5c5ed;
+// }
+// .navbar-brand:hover {
+//   background-color: #c5c5ed;
+// }
+// .nav:hover {
+// background-color: #c5c5ed;
+// }
+
+.container-fluid {
+  background-color: #c5c5ed;
 }
