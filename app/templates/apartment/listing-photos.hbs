@@ -1,1 +1,5 @@
+{{#each model as |listingPhoto|}}
+<img src={{listingPhoto.url}}>
+{{/each}}
+
 {{apartment/photo-upload createListingPhoto='createListingPhoto'}}
