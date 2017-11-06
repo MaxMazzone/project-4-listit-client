@@ -8,5 +8,6 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   petsAllowed: DS.attr('boolean'),
   editable: DS.attr('boolean'),
-  user: DS.belongsTo('user')
+  user: DS.belongsTo('user'),
+  listingPhoto: DS.hasMany('listing-photo')
 });

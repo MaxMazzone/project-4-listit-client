@@ -25,9 +25,9 @@ module.exports = function (environment) {
       // when it is created
     },
 
-    paperclip: {
-      path: ':class/:attachment/:id_partition/:style/:filename.jpg'
-    },
+    imgur: {
+        clientId: '7b8ff071a57ee6c'
+      }
   };
 
   if (environment === 'development') {

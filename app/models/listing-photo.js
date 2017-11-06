@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  email: DS.attr('string'),
-  apartments: DS.hasMany('apartment'),
+  url: DS.attr('string'),
+  apartment: DS.belongsTo('apartment')
 });
