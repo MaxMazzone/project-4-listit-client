@@ -5,6 +5,9 @@ export default Ember.Route.extend({
   return this.get('store').findRecord('apartment', params.apartment_id);
 },
 actions: {
+  seePhotos(apartment){
+      this.transitionTo('apartment.listing-photos', apartment)
+  },
   deleteApartment(apartment) {
       apartment.destroyRecord()
           .then(() =>

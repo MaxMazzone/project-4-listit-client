@@ -13,9 +13,9 @@ Router.map(function () {
   this.route('apartments/new');
   this.route('apartments');
   this.route('apartment', { path: '/apartments/:apartment_id' }, function() {
-    this.route('listing_photos');
+    this.route('listing-photos');
   });
-  this.route('apartment/edit', { path: '/apartments/:apartment_id/edit' });
+  this.route('apartment/edit', { path: '/apartments/:apartment_id/edit' })
 });
 
 export default Router;

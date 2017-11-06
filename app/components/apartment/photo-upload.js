@@ -14,7 +14,6 @@ export default Ember.Component.extend({
           imageData = imageData.replace('data:image/png;base64', '')
           this.get('imgur').imagePost(imageData).then((result) => {
             const link = result.data.link
-            console.log(link)
 	        this.sendAction('createListingPhoto', link)
 
         }).catch((result) => {

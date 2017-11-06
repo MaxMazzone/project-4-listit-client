@@ -11,11 +11,11 @@
   <li>description: <strong>{{apartment.description}}</strong> </li>
 {{/if}}
   <li>Pets allowed: <strong>{{apartment.petsAllowed}}</strong> </li>
-
 </ul>
-{{outlet}}
+{{outlet apartment=apartment}}
+<button {{action 'seePhotos' apartment=apartment}}>See Photos</button>
 {{#if apartment.editable}}
-{{#link-to 'apartment/edit' apartment}} Edit apartment listing{{/link-to}}
+{{#link-to 'apartment/edit' apartment}} Edit listing{{/link-to}}
 <br>
-<button {{action 'deleteApartment' apartment=model}}>Delete apartment listing</button>
+<button {{action 'deleteApartment' apartment=model}}>Delete listing</button>
 {{/if}}
