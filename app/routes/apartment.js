@@ -11,7 +11,15 @@ actions: {
   deleteApartment(apartment) {
       apartment.destroyRecord()
           .then(() =>
-            this.transitionTo('apartments'));
+            this.transitionTo('apartments'))
+            .then(() => {
+              this.get('flashMessages')
+              .success('Successfully deleted')
+            })
+            .catch(() => {
+              this.get('flashMessages')
+              .danger('There was a problem. Please try again.');
+              });
       },
     },
 });

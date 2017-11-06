@@ -1,2 +1,4 @@
-<img src={{listingPhoto.url}}>
+<img class=img-responsive src={{listingPhoto.url}}>
+{{#if apartment.editable}}
 <button {{action 'deletePhoto' listingPhoto=listingPhoto}}>Delete</button>
+{{/if}}

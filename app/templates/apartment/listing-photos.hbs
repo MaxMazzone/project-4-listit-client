@@ -1,7 +1,10 @@
+<div class="row">
 {{#each model.listingPhoto as |listingPhoto|}}
-{{apartment/photo-view listingPhoto=listingPhoto deletePhoto='deletePhoto'}}
+<div class="col-md-4">
+{{apartment/photo-view apartment=model.apartment listingPhoto=listingPhoto deletePhoto='deletePhoto'}}
+</div>
 {{/each}}
-
+</div>
 {{#if model.apartment.editable}}
 {{apartment/photo-upload createListingPhoto='createListingPhoto' }}
 {{/if}}
