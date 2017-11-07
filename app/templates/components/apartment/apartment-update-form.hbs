@@ -1,12 +1,13 @@
 <h3> Edit listing </h3>
 <div class="form-group">
   <form {{action 'editListing' on='submit'}}>
-    {{input placeholder='Address' value=apartment.address}}
-    {{input placeholder='Rent' value=apartment.rent}}
-    {{input placeholder='Number of bedrooms' value=apartment.bedrooms}}
-    {{input placeholder='Number of bathrooms' value=apartment.bathrooms}}
+    {{input  placeholder='Address' required='true' value=apartment.address}}
+    {{input type='number' required='true' placeholder='Rent' value=apartment.rent}}
+    {{input type='number' required='true' placeholder='Number of bedrooms' value=apartment.bedrooms}}
+    {{input type='number' required='true' placeholder='Number of bathrooms' value=apartment.bathrooms}}
     {{textarea class='form-control'  rows="5" placeholder='Description' value=apartment.description}}
     Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=apartment.petsAllowed}}
+    <br>
     <button type='submit'> save </button>
   </form>
 </div>

@@ -1,17 +1,19 @@
-<h3> {{apartment.address}} </h3>
-<h4>Available for {{format-money apartment.rent precision=0}}</h4>
-<ul>
-{{#if apartment.bedrooms}}
-  <li>Bedrooms: <strong>{{apartment.bedrooms}}</strong> </li>
+<div class='card text-center'>
+<h3 class='card-title'> {{apartment.address}} </h3>
+{{#if apartment.rent}}
+<h4 class='card-title'>Available for: {{format-money apartment.rent precision=0}}</h4>
 {{/if}}
-{{#if apartment.bathrooms}}
-  <li>Bathrooms: <strong>{{apartment.bathrooms}}</strong> </li>
-{{/if}}
+<h5 class="card-title"> <strong> Bedrooms: </strong> {{apartment.bedrooms}} <strong> Bathrooms: </strong> {{apartment.bathrooms}}</h5>
+<h5 class="card-title"> <strong>Pets allowed: </strong> {{apartment.petsAllowed}} </h5>
+</div>
+<div class='card text-left'>
+<div class="card-text">
 {{#if apartment.description}}
-  <li>description: <strong>{{apartment.description}}</strong> </li>
+  <strong> Description: </strong> {{apartment.description}}
 {{/if}}
-  <li>Pets allowed: <strong>{{apartment.petsAllowed}}</strong> </li>
-</ul>
+<br>
+</div>
+ </div>
 {{outlet apartment=apartment}}
 <button {{action 'seePhotos' apartment=apartment}}>See Photos</button>
 <br>

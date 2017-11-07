@@ -1,8 +1,8 @@
 <form class='form-group' {{action 'createApartment' on ='submit'}}>
-  {{input placeholder='Address' value=newApartment.address}}
-  {{input placeholder='Rent' value=newApartment.rent}}
-  {{input placeholder='Number of bedrooms' value=newApartment.bedrooms}}
-  {{input placeholder='Number of bathrooms' value=newApartment.bathrooms}}
+  {{input placeholder='Address' required='true' value=newApartment.address}}
+  {{input type='number' required='true' placeholder='Rent' value=newApartment.rent}}
+  {{input type='number' required='true' placeholder='Number of bedrooms' value=newApartment.bedrooms}}
+  {{input type='number' required='true' placeholder='Number of bathrooms' value=newApartment.bathrooms}}
   {{textarea class='form-control'  rows="5" placeholder='Description' value=newApartment.description}}
   Pets are allowed {{input type="checkbox" name="Pets allowed?" checked=newApartment.petsAllowed}}
   <br>
