@@ -3,10 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   imgur: Ember.inject.service(),
+
   actions: {
     picSubmit (rawFile) {
-      console.log(rawFile)
-      console.log(rawFile.target.files[0])
       const fileReader = new FileReader()
       fileReader.readAsDataURL(rawFile.target.files[0])
       fileReader.onload = () => {
