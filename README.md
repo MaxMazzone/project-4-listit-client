@@ -35,8 +35,10 @@ Planning started with wireframing and ERDs. The back end API was mostly complete
 <h2>
 User Stories:
 </h2>
-<p>
-As a user, I want to be able to see apartment listings
-As a user, I want to post an apartment listing
-As a user, I want to view and post photos
-</p>
+<ul>
+  <li>As a user, I want to be able to see apartment listings</li>
+
+  <li>As a user, I want to post an apartment listing</li>
+
+  <li>As a user, I want to view and post photos</li>
+</ul>
