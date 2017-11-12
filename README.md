@@ -42,3 +42,8 @@ User Stories:
 
   <li>As a user, I want to view and post photos</li>
 </ul>
+<h2>
+Wire-frame:
+</h2>
+<img src="https://lh3.googleusercontent.com/-L0AxpwfXKMQ/WgiL1bbNKgI/AAAAAAAAEjg/bv9x-pIzYUAb2D0d6BKbvhXBfJ0lvA_PQCL0BGAYYCw/h2048/4727459728845018824%253Faccount_id%253D0">
+<img src="https://lh3.googleusercontent.com/-IlN8H9DCEBE/WgiINZTDczI/AAAAAAAAEjM/qKBkIyNT0kAT5Gcbl7VCVbhNiNEZSfoYwCL0BGAYYCw/h2048/4276654311124077519%253Faccount_id%253D0">
